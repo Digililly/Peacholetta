@@ -2,47 +2,139 @@
     text-align: center;
 }
 
-header h1 {}
+/* navigation */
+/* margin nav/header funktioniert rechts nicht*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 1%;
+    margin-top: 0;
+    height: 50px;
+}
+
+nav,
+footer,
+    {
+    margin: 1%;
+}
+
+header h1 {
+    float: left;
+}
+
+nav,
+footer {
+    background-color: darkgoldenrod;
+    padding: 0.5em 0;
+}
+
+/* end of navigation */
 
 body {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 #content {
     overflow: auto;
 }
 
-nav,
-#feature,
+section,
+article,
 footer {
     margin: 1%;
 }
 
-article {
+/*article {
     width: 31.3%;
     float: left;
     margin: 1%;
 }
-
-.column3 {
-    margin-right: 0%;
-}
+*/
 
 li {
     display: inline;
     padding: 0.5em;
 }
 
-nav,
-footer {
+
+section,
+article {
+    margin-bottom: 10px;
     background-color: #efefef;
-    padding: 0.5em 0;
 }
 
-#feature,
-article {
-    height: 10em;
-    margin-bottom: 1em;
-    background-color: #efefef;
+/*Image wheel*/
+slider {
+    display: block;
+    width: 50%;
+    height: 200px;
+    background: red;
+    animation: slide 12s infinite;
+    position: relative;
+    left: 25%;
 }
+
+slider:first-child {
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(/../../../Instagram%20icon.png);
+    background-size: cover;
+    background-position: center;
+}
+
+slider:nth-child(2) {
+    animation-delay: 2s;
+    background-image: url(/../../../Instagram%20icon.png);
+    background-size: cover;
+    background-position: center;
+}
+
+slider:nth-child(3) {
+    animation-delay: 5s;
+    background-image: url(/../../../Instagram%20icon.png);
+    background-size: cover;
+    background-position: center;
+}
+
+slider:nth-child(4) {
+    animation-delay: 8s;
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slide {
+    0% {
+        left: 100%;
+        width: 100%;
+    }
+
+    5% {
+        left: 0%
+    }
+
+    25% {
+        left: 0%
+    }
+
+    30% {
+        left: -100%;
+        width: 100%;
+    }
+
+    30.001% {
+        left: -100%;
+        width: 0%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+}
+
+/*end of image wheel*/
