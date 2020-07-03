@@ -34,7 +34,7 @@ li {
 }
 
 /* end of navigation */
-
+/* general layout */
 body {
     width: 100%;
     margin: 0 auto;
@@ -54,6 +54,9 @@ article {
     padding-bottom: 1%;
 }
 
+/* end of general layout */
+
+/* buttons*/
 .Updates,
 .NKapitel {
     padding-bottom: 15px;
@@ -70,6 +73,19 @@ article {
     background-color: grey;
     border: 1px solid black;
 }
+
+/* end of buttons */
+
+/*Kapitel image*/
+figure {
+    display: block;
+    float: left;
+    width: 33.1%;
+    max-width: 200px;
+
+}
+
+/* end of Kapitel image*/
 
 /*Image wheel
 slider {
