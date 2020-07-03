@@ -9,25 +9,28 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    margin: 1%;
-    margin-top: 0;
     height: 50px;
-}
-
-nav,
-footer,
-    {
-    margin: 1%;
 }
 
 header h1 {
     float: left;
+    margin: 15px;
+    padding-left: 20px;
 }
 
 nav,
 footer {
     background-color: darkgoldenrod;
     padding: 0.5em 0;
+    margin: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li {
+    display: inline;
+    padding: 0.5em;
+    background-color: white;
 }
 
 /* end of navigation */
@@ -36,6 +39,7 @@ body {
     width: 100%;
     margin: 0 auto;
     margin-top: 50px;
+    background-color: green;
 }
 
 #content {
@@ -43,31 +47,31 @@ body {
 }
 
 section,
-article,
-footer {
-    margin: 1%;
-}
-
-/*article {
-    width: 31.3%;
-    float: left;
-    margin: 1%;
-}
-*/
-
-li {
-    display: inline;
-    padding: 0.5em;
-}
-
-
-section,
 article {
+    margin: 1%;
     margin-bottom: 10px;
     background-color: #efefef;
+    padding-bottom: 1%;
 }
 
-/*Image wheel*/
+.Updates,
+.NKapitel {
+    padding-bottom: 15px;
+}
+
+.button {
+    padding: 10px;
+    background-color: darkgray;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.button:hover {
+    background-color: grey;
+    border: 1px solid black;
+}
+
+/*Image wheel
 slider {
     display: block;
     width: 50%;
