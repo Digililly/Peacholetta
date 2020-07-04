@@ -64,11 +64,19 @@ article {
     padding: 2%;
 }
 
+section figure {
+    display: block;
+    float: left;
+    width: 33.1%;
+    max-width: 200px;
+}
+
 /* end of general layout */
 
 /* buttons*/
 #Updates,
-#NKapitel {
+#NKapitel,
+.werke {
     padding-bottom: 15px;
 }
 
@@ -87,7 +95,7 @@ article {
 /* end of buttons */
 
 /*Kapitel image*/
-figure {
+.werke figure:nth-child(odd) {
     display: block;
     float: left;
     width: 33.1%;
@@ -95,7 +103,16 @@ figure {
 
 }
 
+.werke figure:nth-child(even) {
+    display: block;
+    float: right;
+    width: 33.1%;
+    max-width: 200px;
+
+}
+
 /* end of Kapitel image*/
+
 
 /*Contact info*/
 section .fa,
