@@ -16,18 +16,19 @@ header {
 
 header h1 {
     float: left;
-    margin: 15px;
-    padding-left: 20px;
+    margin: 10px;
+    padding-left: 10px;
 }
 
 nav {
     padding: 0.5em 0;
-    font-size: 15px
+    background-color: white;
+    font-size: 15px;
 }
 
 footer {
     padding: 0.1em 0;
-   
+
 }
 
 nav,
@@ -38,11 +39,14 @@ footer {
     margin-bottom: 0;
 }
 
-nav li {
-    display: inline;
-    padding: 0.5em;
-    background-color: white;
+
+
+nav a {
+    padding: 2%;
+    background-color: antiquewhite;
+    border-radius: 4px;
 }
+
 
 footer .fa,
 footer .far {
@@ -109,6 +113,7 @@ textarea {
 
 .harmonica {
     margin: 1%;
+    margin-top: 75px;
     background-color: #efefef;
     padding: 2%;
     list-style-type: none;
