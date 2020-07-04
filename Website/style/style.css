@@ -37,7 +37,7 @@ footer {
     margin-bottom: 0;
 }
 
-li {
+nav li {
     display: inline;
     padding: 0.5em;
     background-color: white;
@@ -75,7 +75,8 @@ body {
 }
 
 section,
-article {
+article,
+    {
     margin: 1%;
     margin-bottom: 10px;
     background-color: #efefef;
@@ -99,6 +100,54 @@ textarea {
 
 /* end of text area */
 
+/* harmonica*/
+.harmonica {
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+.harmonica {
+    margin: 1%;
+    background-color: #efefef;
+    padding: 2%;
+    list-style-type: none;
+}
+
+.harmonica h2 {
+    cursor: pointer;
+    margin: 0;
+    padding: 1% 2%;
+    background-color: #42444e;
+    color: #ffffff;
+}
+
+.harmonica li.visible h2 {
+    background-color: #42444e;
+    color: #ffffff;
+}
+
+.harmonica h2 + div {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+
+}
+
+.harmonica h2 + div p:first-child {
+    margin-top: 16px;
+}
+
+.harmonica h2 + div p {
+    margin: 0 0 16px;
+}
+
+.harmonica li.visible h2 + div {
+    height: auto;
+    background-color: #ced4f2;
+}
+
+/* end of harmonica*/
 /* buttons*/
 #Updates,
 #NKapitel,
@@ -111,6 +160,7 @@ textarea {
     background-color: darkgray;
     border: 1px solid black;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .button:hover {
