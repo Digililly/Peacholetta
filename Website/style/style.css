@@ -33,7 +33,7 @@ footer {
 
 nav,
 footer {
-    background-color: darkgoldenrod;
+    background-color: lightgreen;
     margin: 1%;
     margin-top: 0;
     margin-bottom: 0;
@@ -72,7 +72,7 @@ body {
     width: 100%;
     margin: 0 auto;
     margin-top: 50px;
-    background-color: green;
+    background-color: lightgoldenrodyellow;
 }
 
 #content {
