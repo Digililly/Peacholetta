@@ -27,6 +27,7 @@ nav {
 
 footer {
     padding: 0.1em 0;
+   
 }
 
 nav,
@@ -79,7 +80,7 @@ article,
     {
     margin: 1%;
     margin-bottom: 10px;
-    background-color: #efefef;
+    background-color: white;
     padding: 2%;
 }
 
@@ -117,14 +118,23 @@ textarea {
     cursor: pointer;
     margin: 0;
     padding: 1% 2%;
-    background-color: #42444e;
+    background-color: darkslategray;
     color: #ffffff;
 }
 
 .harmonica li.visible h2 {
-    background-color: #42444e;
+    background-color: lightslategray;
     color: #ffffff;
 }
+
+.harmonica li h2 div {
+    margin-right: 1%;
+}
+
+.harmonica li.visible h2 div {
+    transform: rotate(90deg);
+}
+
 
 .harmonica h2 + div {
     box-sizing: border-box;
@@ -187,12 +197,14 @@ textarea {
 
 }
 
-.fas {
+.werke .fas {
     position: absolute;
     top: 80px;
     left: 20px;
     padding: 10px;
 }
+
+.fas {}
 
 /* end of Kapitel image*/
 
