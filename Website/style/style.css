@@ -137,6 +137,13 @@ textarea {
 
 }
 
+.fas {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    padding: 10px;
+}
+
 /* end of Kapitel image*/
 
 
