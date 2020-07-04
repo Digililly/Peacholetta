@@ -22,6 +22,7 @@ header h1 {
 
 nav {
     padding: 0.5em 0;
+    font-size: 15px
 }
 
 footer {
@@ -40,6 +41,23 @@ li {
     display: inline;
     padding: 0.5em;
     background-color: white;
+}
+
+footer .fa,
+footer .far {
+    padding: 6px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 2px;
+    border-radius: 50%;
+    background: darkgray;
+    color: white;
+}
+
+footer .fa,
+footer .far:hover {
+    opacity: 0.7;
 }
 
 /* end of navigation */
@@ -64,11 +82,27 @@ article {
     padding: 2%;
 }
 
+section figure {
+    display: block;
+    float: left;
+    width: 33.1%;
+    max-width: 200px;
+}
+
 /* end of general layout */
+
+/*text area*/
+textarea {
+    width: 80%;
+    height: 150px
+}
+
+/* end of text area */
 
 /* buttons*/
 #Updates,
-#NKapitel {
+#NKapitel,
+.werke {
     padding-bottom: 15px;
 }
 
@@ -87,7 +121,7 @@ article {
 /* end of buttons */
 
 /*Kapitel image*/
-figure {
+.werke figure:nth-child(odd) {
     display: block;
     float: left;
     width: 33.1%;
@@ -95,7 +129,23 @@ figure {
 
 }
 
+.werke figure:nth-child(even) {
+    display: block;
+    float: right;
+    width: 33.1%;
+    max-width: 200px;
+
+}
+
+.fas {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    padding: 10px;
+}
+
 /* end of Kapitel image*/
+
 
 /*Contact info*/
 section .fa,
@@ -114,25 +164,6 @@ section .fa,
 section .far:hover {
     opacity: 0.7;
 }
-
-
-footer .fa,
-footer .far {
-    padding: 6px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 0px 2px;
-    border-radius: 50%;
-    background: darkgray;
-    color: white;
-}
-
-footer .fa,
-footer .far:hover {
-    opacity: 0.7;
-}
-
 
 /* end of contact info*/
 
