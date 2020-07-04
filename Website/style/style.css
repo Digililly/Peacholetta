@@ -16,17 +16,19 @@ header {
 
 header h1 {
     float: left;
-    margin: 15px;
-    padding-left: 20px;
+    margin: 10px;
+    padding-left: 10px;
 }
 
 nav {
     padding: 0.5em 0;
-    font-size: 15px
+    background-color: white;
+    font-size: 15px;
 }
 
 footer {
     padding: 0.1em 0;
+
 }
 
 nav,
@@ -37,11 +39,14 @@ footer {
     margin-bottom: 0;
 }
 
-li {
-    display: inline;
-    padding: 0.5em;
-    background-color: white;
+
+
+nav a {
+    padding: 2%;
+    background-color: antiquewhite;
+    border-radius: 4px;
 }
+
 
 footer .fa,
 footer .far {
@@ -75,10 +80,11 @@ body {
 }
 
 section,
-article {
+article,
+    {
     margin: 1%;
     margin-bottom: 10px;
-    background-color: #efefef;
+    background-color: white;
     padding: 2%;
 }
 
@@ -99,6 +105,64 @@ textarea {
 
 /* end of text area */
 
+/* harmonica*/
+.harmonica {
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+.harmonica {
+    margin: 1%;
+    margin-top: 75px;
+    background-color: #efefef;
+    padding: 2%;
+    list-style-type: none;
+}
+
+.harmonica h2 {
+    cursor: pointer;
+    margin: 0;
+    padding: 1% 2%;
+    background-color: darkslategray;
+    color: #ffffff;
+}
+
+.harmonica li.visible h2 {
+    background-color: lightslategray;
+    color: #ffffff;
+}
+
+.harmonica li h2 div {
+    margin-right: 1%;
+}
+
+.harmonica li.visible h2 div {
+    transform: rotate(90deg);
+}
+
+
+.harmonica h2 + div {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+
+}
+
+.harmonica h2 + div p:first-child {
+    margin-top: 16px;
+}
+
+.harmonica h2 + div p {
+    margin: 0 0 16px;
+}
+
+.harmonica li.visible h2 + div {
+    height: auto;
+    background-color: #ced4f2;
+}
+
+/* end of harmonica*/
 /* buttons*/
 #Updates,
 #NKapitel,
@@ -111,6 +175,7 @@ textarea {
     background-color: darkgray;
     border: 1px solid black;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -137,12 +202,14 @@ textarea {
 
 }
 
-.fas {
+.werke .fas {
     position: absolute;
     top: 80px;
     left: 20px;
     padding: 10px;
 }
+
+.fas {}
 
 /* end of Kapitel image*/
 
