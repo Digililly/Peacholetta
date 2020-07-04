@@ -22,6 +22,7 @@ header h1 {
 
 nav {
     padding: 0.5em 0;
+    font-size: 15px
 }
 
 footer {
@@ -40,6 +41,23 @@ li {
     display: inline;
     padding: 0.5em;
     background-color: white;
+}
+
+footer .fa,
+footer .far {
+    padding: 6px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 2px;
+    border-radius: 50%;
+    background: darkgray;
+    color: white;
+}
+
+footer .fa,
+footer .far:hover {
+    opacity: 0.7;
 }
 
 /* end of navigation */
@@ -72,6 +90,14 @@ section figure {
 }
 
 /* end of general layout */
+
+/*text area*/
+textarea {
+    width: 80%;
+    height: 150px
+}
+
+/* end of text area */
 
 /* buttons*/
 #Updates,
@@ -111,6 +137,13 @@ section figure {
 
 }
 
+.fas {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    padding: 10px;
+}
+
 /* end of Kapitel image*/
 
 
@@ -131,25 +164,6 @@ section .fa,
 section .far:hover {
     opacity: 0.7;
 }
-
-
-footer .fa,
-footer .far {
-    padding: 6px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 0px 2px;
-    border-radius: 50%;
-    background: darkgray;
-    color: white;
-}
-
-footer .fa,
-footer .far:hover {
-    opacity: 0.7;
-}
-
 
 /* end of contact info*/
 
